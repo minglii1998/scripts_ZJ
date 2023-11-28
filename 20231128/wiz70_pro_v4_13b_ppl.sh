@@ -17,7 +17,7 @@ do
     echo $i
         torchrun --nproc_per_node=8 fastchat/train/train_mem.py \
             --model_name_or_path /root/scratch/Llama-2-13b-hf \
-            --data_path /root/scratch/scripts_ZHIJIANG/data/13b_data/r_wiz70_pro_v4_ppl_13b_per${i}_sharegpt.json \
+            --data_path /root/scratch/scripts_ZJ/data/13b_data/r_wiz70_pro_v4_ppl_13b_per${i}_sharegpt.json \
             --model_prompt vicuna \
             --lazy_preprocess False \
             --cache_dir ../cache \
