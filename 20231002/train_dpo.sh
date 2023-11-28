@@ -1,0 +1,11 @@
+ulimit -n 64000; python -u train.py   model=llama7b \
+    model.name_or_path='/root/scratch/Llama-2-7b-hf' \
+    model.block_name=LlamaDecoderLayer \
+    datasets=[hh] \
+    loss=sft \
+    exp_name=anthropic_shp_sft_llama_7b \
+    gradient_accumulation_steps=8 \
+    batch_size=128 \
+    eval_batch_size=8 \
+    trainer=FSDPTrainer \
+    sample_during_eval=false

@@ -1,0 +1,1 @@
+python download_uploaded_data.py --data_path Minglii/wiz_ori_full --save_path data/wizardlm_V2_196k_sharegpt.json

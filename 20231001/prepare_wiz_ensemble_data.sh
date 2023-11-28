@@ -1,0 +1,1 @@
+python download_uploaded_data.py --data_path Minglii/wiz_ensemble_ppl_v1_sharegpt --save_path data/wiz_ensemble_ppl_v1_sharegpt.json

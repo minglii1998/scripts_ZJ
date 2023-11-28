@@ -1,0 +1,2 @@
+python download_uploaded_data.py --data_path Minglii/r_pv4_alp --save_path data/alpaca_selection_pro_v4_ppl_sharegpt.json
+python download_uploaded_data.py --data_path Minglii/r_pv4_wiz70 --save_path data/wiz70_selection_pro_v4_ppl_sharegpt.json

@@ -1,0 +1,1 @@
+python download_uploaded_data.py --data_path Minglii/Ensemble_alpaca_vic_wiz_llama2_sharegpt --save_path data/alpaca_data_vic_wiz_llama2_sharegpt_format.json
