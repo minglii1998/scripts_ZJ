@@ -5,7 +5,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
 torchrun --nproc_per_node=8 --master_port=25659 fastchat/train/train_mem.py \
     --model_name_or_path /root/scratch/Llama-2-13b-hf \
-    --data_path /root/scratch/scripts_ZHIJIANG/data/wiz70_selection_pro_v4_ppl_sharegpt.json \
+    --data_path /root/scratch/scripts_ZJ/data/wiz70_selection_pro_v4_ppl_sharegpt.json \
     --model_prompt vicuna \
     --lazy_preprocess False \
     --cache_dir ../cache \
