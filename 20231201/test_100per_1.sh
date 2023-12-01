@@ -8,7 +8,7 @@ MODEL_NAME="wiz70_selection_pro_v4_ppl_sharegpt_13b_1e5_3epo_1201"
 
 export HF_HOME=/root/scratch/cache
 export TRANSFORMERS_CACHE=/root/scratch/cache
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=7
 
 # # Run TruthfulQA
 # python main.py \

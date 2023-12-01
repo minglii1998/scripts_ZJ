@@ -8,7 +8,7 @@ MODEL_NAME="r_wiz70_pro_v4_ppl_13b_per2_1e5_3epo"
 
 export HF_HOME=/root/scratch/cache
 export TRANSFORMERS_CACHE=/root/scratch/cache
-export CUDA_VISIBLE_DEVICES=3
+export CUDA_VISIBLE_DEVICES=1
 
 # # Run TruthfulQA
 # python main.py \
