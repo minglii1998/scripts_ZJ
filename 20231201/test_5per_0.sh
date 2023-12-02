@@ -3,8 +3,8 @@
 cd /root/scratch/lm-evaluation-harness
 
 # Define common parameters
-MODEL_PATH="/root/scratch/trained_models_fs/r_wiz70_pro_v4_ppl_13b_per5_1e5_3epo"
-MODEL_NAME="r_wiz70_pro_v4_ppl_13b_per5_1e5_3epo"
+MODEL_PATH="/root/scratch/trained_models_fs/r_wiz70_pro_v4_ppl_13b_per50_1e5_3epo"
+MODEL_NAME="r_wiz70_pro_v4_ppl_13b_per50_1e5_3epo"
 
 export HF_HOME=/root/scratch/cache
 export TRANSFORMERS_CACHE=/root/scratch/cache
