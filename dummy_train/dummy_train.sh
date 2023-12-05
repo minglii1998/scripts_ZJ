@@ -5,13 +5,13 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
 torchrun --nproc_per_node=8 fastchat/train/train_mem.py \
     --model_name_or_path /root/scratch/Llama-2-13b-hf \
-    --data_path /root/scratch/scripts_ZHIJIANG/data_common/alpaca_sharegpt_format.json \
+    --data_path /root/scratch/scripts_ZJ/data_common/alpaca_sharegpt_format.json \
     --model_prompt vicuna \
     --lazy_preprocess False \
     --cache_dir ../cache \
     --bf16 True \
     --output_dir /root/scratch/trained_models_fs/Dummy_train \
-    --num_train_epochs 50 \
+    --num_train_epochs 500 \
     --per_device_train_batch_size 4 \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 8 \
