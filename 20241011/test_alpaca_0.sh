@@ -3,8 +3,8 @@
 cd /root/scratch/lm-evaluation-harness
 
 # Define common parameters
-MODEL_PATH="/root/scratch/trained_models_fs/alpaca_sharegpt_format"
-MODEL_NAME="alpaca_sharegpt_format"
+MODEL_PATH="/root/scratch/trained_models_fs/alpaca_sharegpt_format_1e5_5epo"
+MODEL_NAME="alpaca_sharegpt_format_1e5_5epo"
 
 export HF_HOME=/root/scratch/cache
 export TRANSFORMERS_CACHE=/root/scratch/cache
