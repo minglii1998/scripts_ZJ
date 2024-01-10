@@ -4,9 +4,7 @@ export WANDB_MODE=dryrun
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
 array=(
-    5
     10
-    15
 )
 for i in "${array[@]}"
 do
