@@ -4,10 +4,10 @@ export WANDB_MODE=dryrun
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
 array=(
-    alpaca_gpt4_data_sharegpt
     alpaca_gpt4_gpt2_data_5per_sharegpt
     alpaca_gpt4_gpt2_data_10per_sharegpt
     alpaca_gpt4_gpt2_data_15per_sharegpt
+    alpaca_gpt4_data_sharegpt
 )
 for i in "${array[@]}"
 do
