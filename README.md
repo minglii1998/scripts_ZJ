@@ -61,3 +61,118 @@
     }
   },
 ```
+
+
+```
+### model
+model_name_or_path: meta-llama/Meta-Llama-3-8B
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: Vicuna_1M_sharegpt_1x_new_4k_0multi
+template: vicuna
+cutoff_len: 4096
+max_samples: 
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: trained_models_lf/llama3_8b_Vicuna_1M_sharegpt_1x_new_4k_0multi_vic_template
+logging_steps: 10
+save_steps: 3000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+save_only_model: true```
+
+
+```
+### model
+model_name_or_path: meta-llama/Meta-Llama-3-8B
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: Magpie_pro_300k_sharegpt_3x_new_8k
+template: vicuna
+cutoff_len: 8192
+max_samples: 
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: trained_models_lf/llama3_8b_Magpie_pro_300k_sharegpt_3x_new_8k_vic_template
+logging_steps: 10
+save_steps: 3000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 2.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+save_only_model: true
+```
+
+```
+### model
+model_name_or_path: meta-llama/Meta-Llama-3-8B
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: Magpie_pro_300k_sharegpt
+template: vicuna
+cutoff_len: 8192
+max_samples: 
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: trained_models_lf/llama3_8b_Magpie_pro_300k_sharegpt_2epo_vic_template
+logging_steps: 10
+save_steps: 3000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 2.0e-5
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+save_only_model: true
+```
