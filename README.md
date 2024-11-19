@@ -17,7 +17,6 @@
 | colpali best (Q+A) | ----   | ----  | ----  | ----  | ----     | ----    | ----   | ----  | ----    | ----    | ----   | ----  | ----    | ----     | ----  | ----      | 47.19  |
 
 ```
-  
   "Magpie_pro_300k_sharegpt": {
     "file_name": "mosaic_new_for_iclr/Magpie_pro_300k_sharegpt.json",
     "formatting": "sharegpt",
@@ -98,7 +97,8 @@ warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
 
-save_only_model: true```
+save_only_model: true
+```
 
 
 ```
