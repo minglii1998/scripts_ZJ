@@ -81,7 +81,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: trained_models_lf/llama3_8b_Vicuna_1M_sharegpt_1x_new_4k_0multi_vic_template
+output_dir: /mnt/localssd/trained_models_lf/llama3_8b_Vicuna_1M_sharegpt_1x_new_4k_0multi_vic_template
 logging_steps: 10
 save_steps: 3000
 plot_loss: true
@@ -120,7 +120,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: trained_models_lf/llama3_8b_Magpie_pro_300k_sharegpt_3x_new_8k_vic_template
+output_dir: /mnt/localssd/trained_models_lf/llama3_8b_Magpie_pro_300k_sharegpt_3x_new_8k_vic_template
 logging_steps: 10
 save_steps: 3000
 plot_loss: true
@@ -158,7 +158,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: trained_models_lf/llama3_8b_Magpie_pro_300k_sharegpt_2epo_vic_template
+output_dir: /mnt/localssd/trained_models_lf/llama3_8b_Magpie_pro_300k_sharegpt_2epo_vic_template
 logging_steps: 10
 save_steps: 3000
 plot_loss: true
