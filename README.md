@@ -176,3 +176,7 @@ ddp_timeout: 180000000
 
 save_only_model: true
 ```
+
+```
+FORCE_TORCHRUN=1 llamafactory-cli train examples/train_full/llama3_full_sft_ds3_vic_mosaic_2epo.yaml
+```
